@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="src/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <title>My Webpage</title>
+    </head>
+    <body>
+
+      <!--navbar-->
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">AUTOBROS CAR STUDIO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="wash.html">Washing</a></li>
+                  <li><a class="dropdown-item" href="#">Detailing</a></li>
+                  <li><a class="dropdown-item" href="extra.html">Extras</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <!--Cart Icon-->
+        <a href="cart.html">
+          <div class="cart">
+            <i class="bi bi-cart3"></i>
+            <div id="cartAmount" class="cartAmount">0</div>
+          </div>
+        </a>
+
+        </div>
+      </nav>
+      <br><br>
+
+
+      <!--Text-->
+      <p>
+        <h1 class="px-4">Our Detailing Services</h1>
+      </p>
+      <p>
+        <h4 class="text-secondary px-4">THAT LOOKS SPOT ON! is something we love to hear from our customers. We go lengthts to cover every single spot
+            and make that beauty cleeeean. We offer range of detailing services in various diffrent prices that won't make you think twice and will make
+            sure you become our regular customer!
+        </h4>
+      </p>
+      <br><br>
+
+
+      <!--Product Cards-->
+      <div class="shop px-4" id="shop">
+
+        <div id=product-id-4 class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="images/detail1.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Waxing</h5>
+                <p class="card-text">
+                  As the title suggests we do wax rubbing and polish the car inside-out.
+                </p>
+                <br>
+                <button type="button" onclick="add(4)" class="btn btn-primary">@300 | Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+        <div id=product-id-5 class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="images/detail2.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Interior Cleaning</h5>
+                <p class="card-text">
+                  Remember when we said we go lenghts to remove all those crumbs inside your ride to make it look
+                  fresh, well that's what's up here.
+                </p>
+                <br>
+                <button type="button" onclick="add(5)" class="btn btn-primary">@300 | Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+        <div id=product-id-6 class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="images/detail3.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Mirror Finish</h5>
+                <p class="card-text">
+                  Our signature finishing style. We will polish your wheels to make it look like you've just leased
+                  it from the dealership.
+                </p>
+                <br>
+                <button type="button" onclick="add(6)" class="btn btn-primary">@800 | Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+
+      </div>
+
+      <!--Footer-->
+      <footer class="bg-dark text-white text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-uppercase">About Us</h5>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+                voluptatem veniam, est atque cumque eum delectus sint!
+              </p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Links</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="wash.html" class="text-white">Washing</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Detailing</a>
+                </li>
+                <li>
+                  <a href="extra.html" class="text-white">Extra Services</a>
+                </li>
+                <li>
+                  <a href="contact.html" class="text-white">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h5 class="mb-1" style="letter-spacing: 2px; color: #818963;">Opening hours</h5>
+              <table class="table" style="color: white; border-color: white;">
+                <tbody>
+                  <tr>
+                    <td>Mon - Fri:</td>
+                    <td>8am - 9pm</td>
+                  </tr>
+                  <tr>
+                    <td>Sat - Sun:</td>
+                    <td>8am - 1am</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2024 Copyright:
+          <a class="text-white" href="https://dhruvgoswami.unaux.com/">dhruvgoswami.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+
+    </body>
+    <script src="src/data.js"></script>
+    <script src="src/main.js"></script>
+</html>
