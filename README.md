@@ -1,6 +1,6 @@
 # YOUR PROJECT TITLE
 #### Link for the App/Website: [AutoBros CarWash](https://carwash-project-alpha.vercel.app/)
-#### Video Demo: https://youtu.be/IAB5SJqBHOA
+#### Video Demo: [CS50x Final Project: AutoBros CarWash](https://youtu.be/IAB5SJqBHOA)
 #### Description:
 
 AUTOBROS CAR STUDIO is an online E-Commerce website for car washing business. You can visit the website, select from the range of services, select from the available time slot and book a car wash at the comfort of your home.
